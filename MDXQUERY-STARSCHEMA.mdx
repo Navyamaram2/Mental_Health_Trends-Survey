@@ -1,0 +1,95 @@
+---STAR SCHEMA
+--ROLL UP
+WITH 
+MEMBER [Measures].[Avg Anxiety by Country] AS 
+    AVG(
+        [Dim Location 1].[Country].[Country].MEMBERS,
+        [Measures].[Anxiety Level]
+    ),
+    FORMAT_STRING = "0.00"
+
+SELECT 
+    {
+        [Measures].[Avg Anxiety by Country]
+    } ON COLUMNS,
+
+    NONEMPTY(
+        CROSSJOIN(
+            [Dim Location 1].[Country].[Country].MEMBERS,
+            [Dim Employee 1].[Gender].[Gender].MEMBERS,
+            [Dim Job 1].[Workplace Type].[Workplace Type].MEMBERS,
+            [Dim Health 1].[Burnout Level].[Burnout Level].MEMBERS
+        )
+    ) ON ROWS
+
+FROM [Mentalhealthtrends DB star1]
+---DRILL DOWN
+SELECT 
+    {
+        [Measures].[Anxiety Level]
+    } ON COLUMNS,
+
+    NONEMPTY(
+        CROSSJOIN(
+            [Dim Location 1].[Country].[Country].MEMBERS,
+            [Dim Location 1].[State].[State].MEMBERS,
+            [Dim Location 1].[City].[City].MEMBERS,
+            [Dim Employee 1].[Age].[Age].MEMBERS,
+            [Dim Job 1].[Job Role].[Job Role].MEMBERS,
+            [Dim Health 1].[Workload].[Workload].MEMBERS
+        )
+    ) ON ROWS
+
+FROM [Mentalhealthtrends DB star1]
+--SLICE
+SELECT 
+    {
+        [Measures].[Anxiety Level]
+    } ON COLUMNS,
+
+    NONEMPTY(
+        CROSSJOIN(
+            [Dim Location 1].[Country].[Country].MEMBERS,
+            [Dim Job 1].[Workplace Type].[Workplace Type].MEMBERS,
+            [Dim Health 1].[Substance Use].[Substance Use].MEMBERS
+        )
+    ) ON ROWS
+
+FROM [Mentalhealthtrends DB star1]
+
+WHERE ([Dim Employee 1].[Gender].[Female])
+---PIVOT
+SELECT 
+    [Dim Location 1].[State].[State].MEMBERS ON COLUMNS,
+
+    NONEMPTY(
+        CROSSJOIN(
+            [Dim Job 1].[Job Role].[Job Role].MEMBERS,
+            [Dim Employee 1].[Gender].[Gender].MEMBERS,
+            [Dim Health 1].[Burnout Level].[Burnout Level].MEMBERS
+        )
+    ) ON ROWS
+
+FROM [Mentalhealthtrends DB star1]
+
+WHERE ([Measures].[Anxiety Level])
+--DICE
+SELECT 
+    {
+        [Measures].[Anxiety Level],
+        [Measures].[Salary Satisfaction]
+    } ON COLUMNS,
+
+    NONEMPTY(
+        CROSSJOIN(
+            [Dim Location 1].[State].[State].MEMBERS,
+            [Dim Health 1].[Workload].[Workload].MEMBERS
+        )
+    ) ON ROWS
+
+FROM [Mentalhealthtrends DB star1]
+
+WHERE (
+    [Dim Employee 1].[Gender].[Female],
+    [Dim Job 1].[Workplace Type].[Remote]
+)
