@@ -1,0 +1,149 @@
+--FACT CONCTELLATION
+---ROLL-UP
+WITH 
+MEMBER [Measures].[Stress Level Raw] AS 
+    [Measures].[Stress Level],
+    FORMAT_STRING = "0.00"
+
+MEMBER [Measures].[Average Stress Level By Country] AS 
+    AVG(
+        [Dim Location].[Country].[Country].MEMBERS,
+        [Measures].[Stress Level]
+    ),
+    FORMAT_STRING = "0.00"
+
+MEMBER [Measures].[Work Hours Raw] AS 
+    [Measures].[Work Hours Per Week],
+    FORMAT_STRING = "0.00"
+
+MEMBER [Measures].[Average Work Hours By Country] AS 
+    AVG(
+        [Dim Location].[Country].[Country].MEMBERS,
+        [Measures].[Work Hours Per Week]
+    ),
+    FORMAT_STRING = "0.00"
+
+MEMBER [Measures].[Exercise Raw] AS 
+    [Measures].[Exercise Per Week],
+    FORMAT_STRING = "0.00"
+
+MEMBER [Measures].[Average Exercise By Country] AS 
+    AVG(
+        [Dim Location].[Country].[Country].MEMBERS,
+        [Measures].[Exercise Per Week]
+    ),
+    FORMAT_STRING = "0.00"
+
+SELECT 
+{
+    [Measures].[Stress Level Raw], 
+    [Measures].[Average Stress Level By Country],
+    [Measures].[Work Hours Raw],
+    [Measures].[Average Work Hours By Country],
+    [Measures].[Exercise Raw],
+    [Measures].[Average Exercise By Country]
+} ON COLUMNS,
+
+NONEMPTY(
+    CROSSJOIN(
+        [Dim Employee].[Gender].[Gender].MEMBERS,
+        [Dim Health].[Substance Use].[Substance Use].MEMBERS,
+        [Dim Job].[Job Role].[Job Role].MEMBERS,
+        [Dim Job Details].[Domain].[Domain].MEMBERS,
+        [Dim Location].[Country].[Country].MEMBERS
+    )
+) ON ROWS
+
+FROM [Mentalhealthtrends DB]
+
+---DRILL DOWN
+
+WITH 
+MEMBER [Measures].[Country] AS 
+    [Dim Location].[Country].CURRENTMEMBER.MEMBER_CAPTION
+
+MEMBER [Measures].[State] AS 
+    [Dim Location].[State].CURRENTMEMBER.MEMBER_CAPTION
+
+MEMBER [Measures].[City] AS 
+    [Dim Location].[City].CURRENTMEMBER.MEMBER_CAPTION
+
+SELECT 
+{
+    [Measures].[Country],
+    [Measures].[State],
+    [Measures].[City],
+    [Measures].[Stress Level],
+    [Measures].[Work Hours Per Week]
+} ON COLUMNS,
+
+NONEMPTY(
+    CROSSJOIN(
+        [Dim Employee].[Age].[Age].MEMBERS,
+        [Dim Health].[Burnout Level].[Burnout Level].MEMBERS,
+        [Dim Job].[Job Role].[Job Role].MEMBERS,
+        [Dim Job Details].[Career Level].[Career Level].MEMBERS,
+        [Dim Location].[City].[City].MEMBERS
+    )
+) ON ROWS
+
+FROM [Mentalhealthtrends DB]
+---SLICE
+WITH 
+MEMBER [Measures].[Anxiety Level (California)] AS 
+    [Measures].[Anxiety Level]
+
+MEMBER [Measures].[Stress Level (California)] AS 
+    [Measures].[Stress Level]
+
+SELECT 
+{
+    [Measures].[Anxiety Level (California)], 
+    [Measures].[Stress Level (California)]
+} ON COLUMNS,
+
+NONEMPTY(
+    CROSSJOIN(
+        [Dim Employee].[Gender].[Gender].MEMBERS,
+        [Dim Health].[Burnout Level].[Burnout Level].MEMBERS,
+        [Dim Job].[Workplace Type].[Workplace Type].MEMBERS,
+        [Dim Job Details].[Domain].[Domain].MEMBERS
+    )
+) ON ROWS
+
+FROM [Mentalhealthtrends DB]
+WHERE ([Dim Location].[State].[California])
+---DICE
+SELECT 
+{
+    [Measures].[Stress Level],
+    [Measures].[Sleep Hours Per Day],
+    [Measures].[Work Hours Per Week]
+} ON COLUMNS,
+
+NONEMPTY(
+    CROSSJOIN(
+        [Dim Employee].[Gender].[Gender].MEMBERS,
+        {[Dim Job].[Workplace Type].[Remote]},
+        [Dim Health].[Workload].[Workload].MEMBERS,
+        [Dim Job Details].[Experience Category].[Experience Category].MEMBERS,
+        {[Dim Location].[State].[Texas], [Dim Location].[State].[New York]}
+    )
+) ON ROWS
+
+FROM [Mentalhealthtrends DB]
+---PIVOT
+SELECT 
+    [Dim Location].[State].[State].MEMBERS ON COLUMNS,
+
+    NONEMPTY(
+        CROSSJOIN(
+            [Dim Employee].[Gender].[Gender].MEMBERS,
+            [Dim Health].[Burnout Level].[Burnout Level].MEMBERS,
+            [Dim Job].[Job Role].[Job Role].MEMBERS,
+            [Dim Job Details].[Domain].[Domain].MEMBERS
+        )
+    ) ON ROWS
+
+FROM [Mentalhealthtrends DB]
+WHERE ([Measures].[Anxiety Level])
