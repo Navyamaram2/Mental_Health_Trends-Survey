@@ -1,0 +1,577 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a803ca56-6540-46da-b788-dfd2a5ad36b8" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Mentalhealthtrends DB snow1</ID>
+  <Name>Mentalhealthtrends DB snow1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="12" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7598" scrolltop="37" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="86" x="26480" y="12319" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_employee" left="6421" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_employee" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_health" left="6186" top="11213" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="4847" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000ef1200006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_health" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_job" left="316" top="3073" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3175" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000670c000003090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_job" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_job_details" left="20" top="7780" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3768" height="2667" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80e00006b0a0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_job_details" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="dim_location" left="12057" top="5606" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="2307" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b000003090000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_location" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="fact_mental_health" left="6186" top="4707" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="3471" height="4106" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00008f0d00000a100000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_fact_mental_health" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7522" top="1808" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__fact_ment__Emplo__44FF419A]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="6" sourceattachpoint="5" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7921" y="2307" />
+              <point x="7921" y="4707" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="7621" top="8513" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="1388" height="3200" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__fact_ment__Healt__46E78A0C]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="6" sourceattachpoint="8" destattachpoint="5" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="8609" y="11213" />
+              <point x="8609" y="10013" />
+              <point x="7921" y="10013" />
+              <point x="7921" y="8813" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="1504" top="4881" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__dim_job_d__JobID__4AB81AF0]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="4" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="1903" y="5380" />
+              <point x="1903" y="6580" />
+              <point x="1904" y="6580" />
+              <point x="1904" y="7780" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3191" top="3827" logicalid="10" controlid="10" masterid="0" hint1="0" hint2="0" width="3295" height="3233" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__fact_ment__JobID__45F365D3]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="6" sourceattachpoint="13" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3491" y="4226" />
+              <point x="4838" y="4226" />
+              <point x="4838" y="6760" />
+              <point x="6186" y="6760" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9357" top="6360" logicalid="11" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__fact_ment__Locat__47DBAE45]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="6" sourceattachpoint="12" destattachpoint="17" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12057" y="6759" />
+              <point x="10857" y="6759" />
+              <point x="10857" y="6760" />
+              <point x="9657" y="6760" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-7598</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>37</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>86</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="4fce240b-ff1a-43c5-ac76-983599536d25">
+      <ID>Fact Mental Health 2</ID>
+      <Name>Fact Mental Health 2</Name>
+      <DimensionID>Fact Mental Health 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6b0edb2b-8af2-4c28-b4f5-3fc1937b2ba4">
+          <AttributeID>Fact Mental ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="66f1ddfc-fcbe-4d9f-a50e-8fde151317a7">
+          <AttributeID>Employee ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3a9dfff7-050c-4104-ab5d-228129be8868">
+          <AttributeID>Location ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e1b99882-00ff-4f6a-a424-f90286158c69">
+          <AttributeID>Job ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5b80e2c0-0476-45cb-87fa-9a82b0de3a2b">
+          <AttributeID>Health ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b3c2dd6a-d8b9-499e-9fc4-890c7bfc5bc5">
+          <AttributeID>Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cc38a5ab-de82-4d84-8651-2567de6372c7">
+          <AttributeID>Salary Satisfaction</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ca2d4243-2d7a-4e48-9ccb-24c7f9b09330">
+          <AttributeID>Anxiety Level</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8aed7de5-741b-45de-a511-0434273f9290">
+          <AttributeID>Depression Level</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="961205a4-b79f-4ad9-a03d-92219ce71a33">
+      <ID>Dim Employee 2</ID>
+      <Name>Dim Employee 2</Name>
+      <DimensionID>Dim Employee 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f1d3b6d3-bbb7-4a32-8ff1-c8716eb4e967">
+          <AttributeID>Employee ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e97a8728-e313-4e67-be94-8bfd94ddef41">
+          <AttributeID>Name</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d0f0e0c7-2c25-4055-a5d3-55786486e6bf">
+          <AttributeID>Age</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="afe4827f-1f2c-4d10-8fd1-3e93d5fd6df5">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="2cafdf21-0568-42b2-ab49-d451cfc9bc83">
+      <ID>Dim Location 2</ID>
+      <Name>Dim Location 2</Name>
+      <DimensionID>Dim Location 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="13929249-c157-4c3f-94d6-8d7cd024aa98">
+          <AttributeID>Location ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4a613ffa-190d-441b-9a4d-597b24824714">
+          <AttributeID>Country</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d7715fa7-556f-4805-b9e3-012dc04ebd2a">
+          <AttributeID>State</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2f947ada-6995-485c-9612-9543d437b0c2">
+          <AttributeID>City</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="64c252ce-7d30-4cd5-b968-6d7c54264ddb">
+      <ID>Dim Job 2</ID>
+      <Name>Dim Job 2</Name>
+      <DimensionID>Dim Job 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="44f154f1-782e-4139-9382-d7449febe403">
+          <AttributeID>Job ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="d6c5ff73-cb67-443b-8408-250d97aad941">
+          <AttributeID>Job Role</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="83273e5e-eb4f-4c00-b452-93b7d9510664">
+          <AttributeID>Company Size</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="2dfe5a21-e57f-4c55-aec9-bed95a1d557e">
+          <AttributeID>Workplace Type</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="57d65a5a-94b1-4bc6-a00f-90d307f92105">
+      <ID>Dim Health 2</ID>
+      <Name>Dim Health 2</Name>
+      <DimensionID>Dim Health 2</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8675adea-a40f-4892-b9b1-54a78a95e37c">
+          <AttributeID>Health ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1e862014-f2a5-4825-9f45-baa8f280fa30">
+          <AttributeID>Workload</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3ed9e14c-4c15-4014-91f5-73f5ca637956">
+          <AttributeID>Burnout Level</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="88fdd911-a241-4f3a-a167-2312833f0408">
+          <AttributeID>Previous Mental Health Issues</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7506ed1f-a17e-49e7-ac44-4fb3452b14a3">
+          <AttributeID>Substance Use</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6ae309d3-555f-4f80-abbd-835c3f12007a">
+      <ID>Dim Job Details 1</ID>
+      <Name>Dim Job Details 1</Name>
+      <DimensionID>Dim Job Details 1</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="9ce15173-0cc1-481d-956e-af33bb24ad8f">
+          <AttributeID>Job Details ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8e2364ca-0543-49be-bfd9-60af4371b07b">
+          <AttributeID>Job ID</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f58a4851-eba4-40c6-b894-bb61f769a039">
+          <AttributeID>Career Level</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="04796fed-2df8-48bf-b04f-e790e0968dd5">
+          <AttributeID>Experience Category</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="36f17fcc-9612-4be8-a0e8-fe3f079bfa4b">
+          <AttributeID>Domain</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="9b2a7b25-712e-4579-a369-5323a14b94a0">
+      <ID>Fact Mental Health</ID>
+      <Name>Fact Mental Health</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7e57462e-e4e3-41b0-bc2e-220519083ff9">
+          <ID>Anxiety Level</ID>
+          <Name>Anxiety Level</Name>
+          <Source dwd:design-time-name="6c900d2f-dda4-4f24-a635-ba1c1316086f">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="51994d14-a273-4675-aca9-9a8a64ced37f">
+              <TableID>dbo_fact_mental_health</TableID>
+              <ColumnID>AnxietyLevel</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="863775a5-eef3-4432-b5ef-bd84e1507b05">
+          <ID>Salary Satisfaction</ID>
+          <Name>Salary Satisfaction</Name>
+          <Source dwd:design-time-name="dc226ad5-e184-44f3-9409-7e2fa73ff291">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="d33539e4-1ac7-406e-906b-9566b99b3d51">
+              <TableID>dbo_fact_mental_health</TableID>
+              <ColumnID>SalarySatisfaction</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="1037e166-e5b0-4120-b45a-9017e9ebfa6c">
+          <ID>Fact Mental Health Count</ID>
+          <Name>Fact Mental Health Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5f658016-0342-499f-866c-771998172de9">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="f9e344a4-eb22-43b3-9d80-aef9a72dd27e">
+              <TableID>dbo_fact_mental_health</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="a5339090-fdb3-4871-8c9f-869ddf7c02f9">
+          <CubeDimensionID>Fact Mental Health 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="070c42dc-6f90-4fc4-b7fe-aded87cfaaf7">
+              <AttributeID>Fact Mental ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="91a94aec-3b7e-49ea-9506-fdb256e2e694">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="529ad046-7918-4ef0-8849-481a82ba8dfc">
+                    <TableID>dbo_fact_mental_health</TableID>
+                    <ColumnID>FactMentalID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b1f9ff6a-d157-408a-b8d6-729c183485a8">
+          <CubeDimensionID>Dim Employee 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="20730304-565b-45a9-ac5d-2ea075909664">
+              <AttributeID>Employee ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="231fc66a-93b4-4163-be6e-cfd02703e15c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ed7c0221-176a-4bf7-9193-606401fda7eb">
+                    <TableID>dbo_fact_mental_health</TableID>
+                    <ColumnID>EmployeeID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="80fd4dd3-f348-4a1b-a640-e4f5d05bf056">
+          <CubeDimensionID>Dim Location 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c548c1df-300e-4fa4-a1e1-0e09a36dbf65">
+              <AttributeID>Location ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="33157a6a-93a2-49f3-8f8c-3af31e993d3b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="aecf36b7-8f13-415a-80a5-d48cf679093a">
+                    <TableID>dbo_fact_mental_health</TableID>
+                    <ColumnID>LocationID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="39f0a819-6e3f-470a-b689-66c8742353b1">
+          <CubeDimensionID>Dim Job 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="fc9a285d-a71e-46d6-84a0-0192e29b7a2c">
+              <AttributeID>Job ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a0afc4ed-e1a2-46aa-a90b-62964d2fe08b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c076f71b-758d-4e6a-9843-3b0fa2470ad6">
+                    <TableID>dbo_fact_mental_health</TableID>
+                    <ColumnID>JobID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e8a7287d-9c5a-4386-ad23-5d65484a3959">
+          <CubeDimensionID>Dim Health 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="86a710e2-7812-40be-bb3e-4b6a76552371">
+              <AttributeID>Health ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b5aebf5d-9bba-42e6-b877-0c69897d2841">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2c9c5783-aea4-4b60-9e2b-a56e279fd8ef">
+                    <TableID>dbo_fact_mental_health</TableID>
+                    <ColumnID>HealthID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ManyToManyMeasureGroupDimension" dwd:design-time-name="9073a942-b954-43c9-9ea9-3550208dbc7c">
+          <CubeDimensionID>Dim Job Details 1</CubeDimensionID>
+          <MeasureGroupID>Dim Job Details</MeasureGroupID>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="b4662562-70f3-41f3-b7ac-271928d5014a">
+      <ID>Dim Job Details</ID>
+      <Name>Dim Job Details</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="5b9f20f8-668a-460a-abe8-9de4eb2988af">
+          <ID>Dim Job Details Count</ID>
+          <Name>Dim Job Details Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="c3da0128-7cb9-492c-b39b-d43005ff2721">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="1d06d24e-e4c6-4e49-9540-2b731169b829">
+              <TableID>dbo_dim_job_details</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="d89ff801-944e-4fe1-a132-fe10e4a19a64">
+          <CubeDimensionID>Dim Job Details 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="627984c4-a99b-4c04-8099-b0a6b3f91764">
+              <AttributeID>Job Details ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="77587e60-8f6d-4938-9d02-bfb2fc247ec2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8cd81728-f69d-4cb1-bcc8-878602507738">
+                    <TableID>dbo_dim_job_details</TableID>
+                    <ColumnID>JobDetailsID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ec106172-d836-4285-aee0-3a5bc5e3be53">
+          <CubeDimensionID>Dim Job 2</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3dc7a48d-fef3-4acd-a0e8-9501bf0f776f">
+              <AttributeID>Job ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c61c9716-2b8d-4d0d-9e23-96eaa561246b">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0fc4f779-6fbb-4998-9e9d-0d51d17157bf">
+                    <TableID>dbo_dim_job_details</TableID>
+                    <ColumnID>JobID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="22441e49-ff5a-4a77-8c40-28fb013132eb">
+    <DataSourceViewID>Mentalhealthtrends DB snow1</DataSourceViewID>
+  </Source>
+</Cube>
