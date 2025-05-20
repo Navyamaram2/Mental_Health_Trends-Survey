@@ -1,0 +1,186 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>16.0.20820.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkZGw1MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAiIHhtbG5zOmRkbDUwMF81MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEzL2VuZ2luZS81MDAvNTAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>MultidimensionalProject27.database</Name>
+    <FullPath>MultidimensionalProject27.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>Mentalhealthtrends DB.cube</Name>
+      <FullPath>Mentalhealthtrends DB factconctellation.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Mentalhealthtrends DB factconctellation.partitions</Name>
+          <FullPath>Mentalhealthtrends DB factconctellation.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentalhealthtrends DB star1.cube</Name>
+      <FullPath>Mentalhealthtrends DB star1.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>Mentalhealthtrends DB star1.partitions</Name>
+          <FullPath>Mentalhealthtrends DB star1.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentalhealthtrends DB snow1.cube</Name>
+      <FullPath>MentalhealthtrendsDB-snowflakeschema.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>MentalhealthtrendsDB-snowflakeschema.partitions</Name>
+          <FullPath>MentalhealthtrendsDB-snowflakeschema.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Health.dim</Name>
+      <FullPath>Dim Health.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Employee.dim</Name>
+      <FullPath>Dim Employee.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Job.dim</Name>
+      <FullPath>Dim Job.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Location.dim</Name>
+      <FullPath>Dim Location.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Mental Health.dim</Name>
+      <FullPath>Fact Mental Health.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Job Details.dim</Name>
+      <FullPath>Dim Job Details.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Employee 1 1.dim</Name>
+      <FullPath>Dim Employee 1 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Location 1 1.dim</Name>
+      <FullPath>Dim Location 1 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Job 1 1.dim</Name>
+      <FullPath>Dim Job 1 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Health 1 1.dim</Name>
+      <FullPath>Dim Health 1 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Mental Health 1 1.dim</Name>
+      <FullPath>Fact Mental Health 1 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Employee 2.dim</Name>
+      <FullPath>Dim Employee 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Location 2.dim</Name>
+      <FullPath>Dim Location 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Job 2.dim</Name>
+      <FullPath>Dim Job 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Health 2.dim</Name>
+      <FullPath>Dim Health 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Fact Mental Health 2.dim</Name>
+      <FullPath>Fact Mental Health 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Job Details 1.dim</Name>
+      <FullPath>Dim Job Details 1.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>Mentalhealthtrends DB star.ds</Name>
+      <FullPath>Mentalhealthtrends DB star.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Mentalhealthtrends DB snow1.ds</Name>
+      <FullPath>Mentalhealthtrends DB snow1.ds</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MentalhealthtrendsDB factconctellation.ds</Name>
+      <FullPath>MentalhealthtrendsDB factconctellation.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>MentalhealthtrendsDB- factconctellation.dsv</Name>
+      <FullPath>MentalhealthtrendsDB- factconctellation.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MentalhealthtrendsDB-starschema.dsv</Name>
+      <FullPath>MentalhealthtrendsDB-starschema.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MentalhealthtrendsDB-snowflakeschema.dsv</Name>
+      <FullPath>MentalhealthtrendsDB-snowflakeschema.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Miscellaneous>
+    <ProjectItem>
+      <Name>MentalhealthtrendsDBFactconctellationds</Name>
+      <FullPath>MentalhealthtrendsDBFactconctellationds</FullPath>
+    </ProjectItem>
+  </Miscellaneous>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>Mentalhealthtrends DB star</Id>
+            <Name>Mentalhealthtrends DB star</Name>
+            <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=LAPTOP-T48LLNKO;Integrated Security=SSPI;Initial Catalog=MentalhealthtrendsDB</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Mentalhealthtrends DB snow</Id>
+            <Name>Mentalhealthtrends DB snow</Name>
+            <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=LAPTOP-T48LLNKO;Integrated Security=SSPI;Initial Catalog=MentalhealthtrendsDB</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>MentalhealthtrendsDB factconctellation</Id>
+            <Name>MentalhealthtrendsDB factconctellation</Name>
+            <Value xsi:type="xsd:string">Provider=SQLOLEDB.1;Data Source=LAPTOP-T48LLNKO;Integrated Security=SSPI;Initial Catalog=MentalhealthtrendsDB</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>Mentalhealthtrends DB star</Id>
+            <Name>Mentalhealthtrends DB star</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>Mentalhealthtrends DB snow</Id>
+            <Name>Mentalhealthtrends DB snow</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+          <ConfigurationSetting>
+            <Id>MentalhealthtrendsDB factconctellation</Id>
+            <Name>MentalhealthtrendsDB factconctellation</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>
