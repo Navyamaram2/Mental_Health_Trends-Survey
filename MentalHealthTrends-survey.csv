@@ -1,0 +1,82 @@
+Name of the Employee,Age,Gender,Workplace Type,Company Size,Job Role,Work Hours per Week (Numerical),Workload,Burnout Level,Previous Mental Health Issues,Sleep Hours per Day (Numerical),"Substance Use (Alcohol,Drugs,etc.)",Stress Level,Exercise Frequency per Week,Depression  Level,"Anxiety Level
+",Salary satisfaction,Date,Country,State,City
+A12,28,Female,Remote,Medium [50-500],Other,20,Medium,Moderate,NO,7,None,3,1,Mild,1,3,01-01-2022,Australia,Queensland,Cairns
+Anitha ,28,Female,Remote,Medium [50-500],Manager,20,Medium,Moderate,Yes,,Occasional,5,3,Severe,0,1,14-01-2022,India,Delhi,Saket
+SANJANA,20,Female,On-site,Medium [50-500],Developer,45,Medium,Mild,NO,7,None,3,3,Mild,2,3,28-01-2022,Germany,Hamburg,Hamburg
+Rajendra Reddy,21,Male,Remote,Small [<50],Other,8,Medium,Severe,Yes,6,None,3,0,Moderate,3,2,11-02-2022,Australia,Western Australia,Bunbury
+Prem,30,Male,Remote,Large [>500],Other,60,Medium,Moderate,Yes,7,None,4,2,Moderate,3,4,25-02-2022,Australia,Victoria,Ballarat
+Ramu ,40,Male,Remote,Medium [50-500],Manager,55,High,Severe,NO,6,None,5,4,Moderate,4,5,11-03-2022,Germany,Hesse,Frankfurt
+Medagam lakshmi Nanditha,20,Female,On-site,Medium [50-500],Other,96,Medium,Moderate,NO,8,None,3,3,Moderate,4,3,25-03-2022,Canada,Quebec,Montreal
+Leela Shakunya Devi ,30,Female,Hybrid,Medium [50-500],Other,50,Medium,,NO,9,,4,3,Moderate,3,,08-04-2022,Canada,British Columbia,Victoria
+Indu,35,Female,Remote,Large [>500],Manager,60,High,Mild,Yes,6,Frequent,4,4,Moderate,4,2,21-04-2022,Germany,Hesse,Wiesbaden
+Vikas,26,Male,Remote,Medium [50-500],Manager,8,Medium,Moderate,Yes,8,Frequent,3,3,Severe,3,3,05-05-2022,Germany,Hesse,Wiesbaden
+Karthik,26,Male,Remote,Medium [50-500],Manager,8,Medium,Moderate,Yes,8,Frequent,2,2,Moderate,2,3,19-05-2022,India,Tamil Nadu,Chennai
+Malli,26,Male,Remote,Small [<50],Developer,8,Medium,Moderate,Yes,8,Frequent,2,4,Severe,4,,02-06-2022,USA,Florida,Orlando
+Babu,26,Male,Remote,Small [<50],Developer,8,Low,Moderate,Yes,8,Frequent,3,4,Severe,4,4,16-06-2022,Germany,Berlin,Berlin
+Aswanth,25,Male,Remote,Small [<50],Developer,8,Low,Mild,Yes,8,Frequent,3,3,Moderate,3,5,30-06-2022,India,Delhi,Saket
+Balaji,26,Male,Hybrid,Medium [50-500],Developer,8,Low,Severe,NO,8,Frequent,5,5,None,5,5,14-07-2022,USA,Texas,Austin
+Dipak,26,Male,Hybrid,Large [>500],Developer,9,Low,Severe,Prefer Not to say,10,Frequent,4,4,Mild,4,5,27-07-2022,USA,California,San Diego
+Srinu,26,Male,Remote,Small [<50],Other,8,High,Severe,Prefer Not to say,10,None,5,3,Severe,2,2,10-08-2022,Canada,Quebec,Quebec City
+Abhi,27,Male,Remote,Medium [50-500],Developer,8,Medium,Moderate,NO,8,Frequent,2,3,Severe,1,2,24-08-2022,India,Maharashtra,Nagpur
+Abhishek,26,Male,Remote,Small [<50],Developer,9,Medium,Moderate,Yes,9,Frequent,3,3,Severe,3,4,07-09-2022,Australia,Queensland,Gold Coast
+Sai,26,Male,On-site,Large [>500],Manager,10,Medium,Moderate,NO,9,None,2,2,None,0,5,21-09-2022,Australia,Queensland,Cairns
+Hemanth,27,Male,Hybrid,Medium [50-500],Manager,9,Medium,Moderate,Yes,9,Frequent,2,2,Moderate,2,3,05-10-2022,Canada,Quebec,Quebec City
+Sumanth,26,Male,Remote,Medium [50-500],Manager,9,Medium,Moderate,Yes,9,Frequent,2,2,Moderate,3,4,19-10-2022,UK,Wales,Swansea
+Chaithanya,26,Female,Hybrid,Small [<50],Developer,9,Medium,Moderate,Yes,9,Frequent,2,2,Severe,2,3,01-11-2022,Germany,Hamburg,Hamburg
+Raghu Ram,26,Male,Hybrid,Medium [50-500],Manager,8,Medium,Moderate,NO,9,Frequent,2,2,Severe,2,3,15-11-2022,USA,Florida,Miami
+Bala,26,Male,Hybrid,Medium [50-500],Developer,8,Low,Mild,Yes,9,Occasional,2,2,Mild,3,4,29-11-2022,Germany,Berlin,Berlin
+Pawan,26,Male,Remote,Large [>500],Developer,9,Low,Mild,Yes,9,Occasional,3,3,Severe,3,4,13-12-2022,USA,California,Los Angeles
+Guru,26,Male,On-site,Large [>500],Manager,9,High,Moderate,Yes,9,Frequent,3,3,Severe,4,2,27-12-2022,Australia,Victoria,Geelong
+Ram,26,Male,On-site,Medium [50-500],Manager,9,Medium,Moderate,Yes,20,Frequent,2,2,Severe,3,1,10-01-2023,India,Delhi,Dwarka
+Kondalu,26,Male,Remote,Medium [50-500],Manager,7,Medium,Moderate,Yes,9,Frequent,4,4,Mild,3,4,24-01-2023,Germany,Hamburg,Hamburg
+Koti,23,Male,Hybrid,Small [<50],Other,9,Low,Moderate,Yes,9,Frequent,2,3,Severe,3,4,06-02-2023,UK,England,London
+Harish,23,Male,Remote,Small [<50],Manager,21,Medium,Mild,NO,9,Frequent,4,1,Moderate,4,5,20-02-2023,Germany,Hamburg,Hamburg
+Yugi,23,Female,Remote,Medium [50-500],Developer,80,Medium,Moderate,Yes,3,Frequent,5,5,Severe,5,1,06-03-2023,Germany,Hesse,Darmstadt
+Valli Balli,23,Male,On-site,Large [>500],Manager,150,High,Severe,Yes,1,Frequent,5,5,Severe,5,5,20-03-2023,India,Tamil Nadu,Coimbatore
+Karuna,23,Female,On-site,Large [>500],Developer,48,High,Severe,NO,7,None,4,1,Moderate,3,3,03-04-2023,Canada,Alberta,Calgary
+Manasa,26,Female,Remote,Medium [50-500],Other,50,Medium,Mild,NO,8,None,4,1,None,5,3,17-04-2023,Canada,British Columbia,Victoria
+🤫,30,Female,Remote,Medium [50-500],Developer,56,Medium,Mild,NO,8,None,1,4,None,0,4,01-05-2023,Canada,Alberta,Red Deer
+Teja,30,Female,Remote,Medium [50-500],Developer,45,Medium,Moderate,Prefer Not to say,6,,5,0,Severe,4,1,14-05-2023,Germany,Berlin,Berlin
+Pujitha,26,Female,Remote,Small [<50],Developer,56,Medium,Moderate,NO,7,None,5,2,Moderate,3,4,28-05-2023,Australia,Western Australia,Fremantle
+M Eswari,20,Female,On-site,Medium [50-500],Developer,7,Medium,Mild,NO,9,None,2,2,Moderate,2,3,11-06-2023,Australia,Western Australia,Perth
+Srikanth,26,Male,Remote,Medium [50-500],Developer,48,Medium,Moderate,NO,7,None,2,4,None,2,3,25-06-2023,UK,Northern Ireland,Belfast
+Niharika ,27,Female,Remote,Medium [50-500],Manager,30,Low,Mild,NO,8,None,3,0,None,2,4,09-07-2023,India,Maharashtra,Nagpur
+Amulya ,29,Female,On-site,Large [>500],Manager,8,Medium,Moderate,Yes,3,None,5,0,Severe,5,3,23-07-2023,UK,Northern Ireland,Derry
+Reddy Asha ,25,Female,Remote,Medium [50-500],Other,50,High,Severe,NO,5,None,4,1,Moderate,3,3,06-08-2023,Canada,British Columbia,Surrey
+Panchakarla Harshitha ,25,Female,On-site,Medium [50-500],Manager,8,Medium,Moderate,NO,7,None,5,5,Moderate,5,5,20-08-2023,UK,Northern Ireland,Lisburn
+Sudha,35,Female,Hybrid,Small [<50],Manager,6,Medium,Mild,Yes,8,Frequent,5,5,Moderate,1,5,02-09-2023,Germany,Hamburg,Hamburg
+RAM SAI JILANI,50,Male,Hybrid,Large [>500],Other,40,Medium,Severe,Prefer Not to say,Vadi ke teliyali,Frequent,4,0,Mild,5,3,16-09-2023,Canada,Alberta,Calgary
+Nimmakuru Ramsai ,25,Male,Hybrid,Small [<50],Other,70,High,Moderate,NO,6,Frequent,5,1,Mild,4,2,30-09-2023,Australia,Victoria,Melbourne
+K. Prathyusha,23,Female,Remote,Small [<50],Other,50,Medium,Mild,Yes,8,None,2,2,Moderate,2,4,14-10-2023,UK,Scotland,Glasgow
+K. Prasad,30,Male,Remote,Medium [50-500],Manager,45,Medium,Moderate,Yes,8,Occasional,3,2,Mild,3,4,28-10-2023,Australia,Queensland,Cairns
+P. Reethu,29,Female,Remote,Small [<50],Developer,40,Low,Mild,Yes,8,None,2,2,Moderate,3,4,11-11-2023,India,Tamil Nadu,Coimbatore
+Vindhya ,31,Female,Hybrid,Medium [50-500],Manager,12,Medium,Moderate,Yes,9,None,4,3,Moderate,3,4,25-11-2023,Germany,Berlin,Berlin
+Aswini,40,Female,Hybrid,Medium [50-500],Developer,70,Medium,Moderate,Yes,10,Frequent,3,5,Moderate,3,4,08-12-2023,India,Delhi,Saket
+Rama,45,Female,Remote,Small [<50],Other,80,High,Mild,NO,8,Frequent,1,5,Severe,3,2,22-12-2023,Australia,Victoria,Melbourne
+Chinna,50,Male,Remote,Large [>500],Manager,90,Low,Severe,NO,9,Occasional,0,2,Severe,0,1,05-01-2024,India,Karnataka,Hubli
+Monalisaa,55,Female,Remote,Medium [50-500],Developer,100,Medium,Mild,NO,10,Occasional,1,5,None,1,1,19-01-2024,UK,Wales,Swansea
+Suresh,65,Male,Remote,Large [>500],Manager,90,Low,Mild,Yes,11,Occasional,0,1,Severe,1,2,02-02-2024,Germany,Hesse,Frankfurt
+Lawyer ,25,Female,On-site,Large [>500],Manager,14,Medium,Moderate,NO,9,None,4,,Severe,1,,16-02-2024,Canada,Quebec,Laval
+T. Meghana,26,Female,Hybrid,Large [>500],Developer,8,Medium,Moderate,NO,5,None,2,4,None,0,4,01-03-2024,Australia,Western Australia,Perth
+Raja,25,Male,Remote,Medium [50-500],Other,5 hours,Medium,Mild,NO,8,None,4,4,None,3,3,14-03-2024,Australia,Victoria,Geelong
+Dhru,20,Male,On-site,Large [>500],Developer,35,Medium,Moderate,NO,7,None,3,5,None,3,5,28-03-2024,India,Maharashtra,Nagpur
+Padma,34,Female,Hybrid,Small [<50],Manager,5,Medium,Mild,Yes,6,Frequent,3,3,Moderate,2,4,11-04-2024,Australia,Western Australia,Perth
+Mohammad Abdul Gafoor (not an employee),19,Male,On-site,Small [<50],Developer,12,High,Severe,Yes,12,None,5,1,Moderate,5,1,25-04-2024,Australia,New South Wales,Sydney
+Akhila,24,Female,Hybrid,Large [>500],Developer,43,High,Severe,Yes,7,None,5,2,Severe,5,1,09-05-2024,USA,California,San Francisco
+Jenith ,19,Male,Hybrid,Large [>500],Developer,50,Medium,Moderate,Prefer Not to say,7,Frequent,3,2,Moderate,4,4,23-05-2024,UK,Northern Ireland,Lisburn
+Kavya,26,Female,On-site,,Manager,7,,,NO,8,None,0,,None,0,5,06-06-2024,India,Delhi,New Delhi
+Prasanna,45,Female,Remote,Medium [50-500],Manager,50,Medium,Moderate,NO,7,Frequent,3,2,Moderate,3,4,19-06-2024,UK,Scotland,Edinburgh
+Kamala,45,Female,Hybrid,Medium [50-500],Manager,30,Medium,Mild,Yes,6,Frequent,2,2,Severe,4,5,03-07-2024,India,Delhi,New Delhi
+Virat,40,Male,Hybrid,Large [>500],Developer,50,,,Yes,8,Occasional,4,3,Severe,3,3,17-07-2024,Germany,Bavaria,Augsburg
+Rani,50,Male,Hybrid,Small [<50],Manager,60,Low,Moderate,NO,50,Occasional,3,3,Moderate,4,3,31-07-2024,Germany,Berlin,Berlin
+Nani,45,Male,On-site,Large [>500],Other,60,High,Moderate,NO,8,None,4,4,Moderate,3,4,14-08-2024,Australia,New South Wales,Wollongong
+Prastuthi,29,Female,Remote,Large [>500],Manager,59,High,Moderate,NO,8,None,4,4,Severe,4,5,28-08-2024,UK,Wales,Cardiff
+Naveen,50,Male,Hybrid,Small [<50],Other,60,Medium,Mild,NO,6,Occasional,3,3,Severe,3,3,11-09-2024,UK,England,Manchester
+Aakash,45,Male,Hybrid,Medium [50-500],Manager,60,Medium,Moderate,Yes,4,Frequent,5,0,Severe,4,1,24-09-2024,India,Delhi,Dwarka
+Rajesh,45,Male,On-site,Large [>500],Other,60,Medium,Mild,Yes,8,Frequent,3,3,Severe,3,4,08-10-2024,India,Maharashtra,Pune
+Arun,45,Male,Hybrid,Medium [50-500],Other,70,High,Severe,Yes,5,None,3,3,Mild,1,3,22-10-2024,UK,Wales,Newport
+Aruna,45,Female,Hybrid,Large [>500],Manager,56,High,Severe,Yes,7,None,4,4,Severe,3,3,05-11-2024,USA,Florida,Miami
+Chinnu ,40,Male,Hybrid,Large [>500],Manager,56,High,Moderate,Yes,8,None,4,4,Moderate,3,5,19-11-2024,Canada,Ontario,Ottawa
+Ram,41,Male,Remote,Large [>500],Manager,40,High,Moderate,Prefer Not to say,9,None,4,4,None,3,5,03-12-2024,UK,Scotland,Glasgow
+Nikky,48,Female,On-site,Medium [50-500],Manager,58,Medium,Moderate,NO,9,None,4,4,Severe,4,5,17-12-2024,Germany,Berlin,Berlin
+Jessy,38,Female,On-site,Large [>500],Other,53,High,Mild,Yes,8,Frequent,3,3,Moderate,4,5,31-12-2024,USA,Texas,Austin
