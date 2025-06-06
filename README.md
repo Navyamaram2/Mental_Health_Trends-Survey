@@ -6,19 +6,6 @@ This project focuses on analyzing mental health trends in workplace environments
 
 ---
 
-## 📁 Project Directory Structure
-MultidimensionalProject27/
-├── Fact Mental Health.dim # Dimension file for mental health measures
-├── Mentalhealthtrends DB star.cube # Star schema cube definition
-├── Mentalhealthtrends DB snow.dsv # Data Source View (Snowflake)
-├── Mentalhealthtrends DB star1.partitions # Cube partitions file
-├── Mentalhealthtrends DB snow1.ds # Data source definition (Snowflake)
-├── Mentalhealthtrends DB star.ds # Data source for Star schema
-├── MentalhealthtrendsDB.dwschema # Data warehouse schema file
-├── MultidimensionalProject27.dwproj # Visual Studio project file for SSAS
-├── MultidimensionalProject27.database # Metadata file for SSAS database
-└── ... # Additional cube/DSV/DS files
----
 
 ## 📌 KDD-Based Workplace Mental Health Analysis
 
